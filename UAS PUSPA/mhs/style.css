@@ -1,0 +1,125 @@
+body {
+    font-family: 'comic', sans-serif;
+    background-color: #9d5a8e;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #222;
+    font-weight: 600;
+}
+
+form {
+    margin-top: 30px;
+    background: #0d90b1;
+    padding: 25px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 12px;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background: linear-gradient(135deg, #0e0c0c, #010a14);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003c7a);
+}
+
+button.delete-btn {
+    background: linear-gradient(135deg, #dc3545, #a71d2a);
+}
+
+button.delete-btn:hover {
+    background: linear-gradient(135deg, #a71d2a, #80171e);
+}
+
+table {
+    width: 90%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+   
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: linear-gradient(135deg, #0b0404, #faf200);
+    color: white;
+    font-weight: 600;
+}
+
+td button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+    table {
+        font-size: 13px;
+    }
+    th, td {
+        padding: 10px;
+    }
+}
